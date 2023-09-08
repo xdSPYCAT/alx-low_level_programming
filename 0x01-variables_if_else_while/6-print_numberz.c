@@ -1,19 +1,18 @@
 #include<stdio.h>
 /**
   *main - Entry point
-  *Description: 'number from 0 to 9'
+  *Description: 'numbers from 0 to 9 but with th ASCII'
   *Return: always 0
   */
 int main(void)
 {
-	int x = 0;
+	int x = 48;
 
-	while (x < 10)
+	while (x < 58)
 	{
-		printf("%d", x);
+		putchar(x);
 		x++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
-
