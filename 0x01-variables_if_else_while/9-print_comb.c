@@ -7,19 +7,14 @@
 int main(void)
 {
 	int x = 48;
-	int y = 97;
 
 	while (x < 58)
 	{
 		putchar(x);
+		putchar(44);
+		putchar(32);
 		x++;
 	}
-
-	while (y < 103)
-	{
-		putchar(y);
-		y++;
-	}
-	putchar('\n');
+	putchar(36);
 	return (0);
 }
