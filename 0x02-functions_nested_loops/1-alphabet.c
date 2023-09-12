@@ -3,15 +3,14 @@
  * main - entry point
  * Return: always 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	int x = 97;
+	int x = 'a';
 
-	while (x > 123)
+	while (x <= 'z')
 	{
 		_putchar(x);
 		x++;
 	}
 	_putchar('\n');
-	return (0);
 }
