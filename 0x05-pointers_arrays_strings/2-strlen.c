@@ -2,6 +2,7 @@
 
 /**
  * _strlen - returns functions length
+ * @s: string
  * Return: length
  */
 
