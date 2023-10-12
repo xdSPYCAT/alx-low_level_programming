@@ -1,21 +1,24 @@
-#include "vardiac_functions.h"
+#include "variadic_functions.h"
 #include <stdarg.h>
 /*
- * variadic_addition - adds variables
- * Return: always 0
+ * sum_them_all - adds variables
+ * @count: number of
+ * @...: variable
+ * Return: if count == 0 - 0
+ * otherwise - the sum of all parameters
  */
-int sum_them_all (int count, ...)
+int sum_them_all(const unsigned int count, ...)
 {
 	va_list args;
-	int i, sum;
-
-	va_start (args, count);
+	unsigned int i, sum;
 
 	sum = 0;
 
-	for (i = 0; i < count; i++)
-		sum +=va_arh (args, int);
+	va_start(args, count);
 
-	va_end (args);
-	return sum;
+	for (i = 0; i < count; i++)
+		sum += va_arg(args, int);
+
+	va_end(args);
+	return (sum);
 }
